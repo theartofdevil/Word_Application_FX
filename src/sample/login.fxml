@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="857.0" style="-fx-background-color: #000030;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+    <children>
+        <ImageView fitHeight="474.0" fitWidth="474.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../pics/login474.JPG" />
+            </image>
+        </ImageView>
+        <Label layoutY="424.0" prefHeight="42.0" prefWidth="397.0" text="ARBEIT MACHT FREI" textFill="#daa2a2">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="501.0" layoutY="96.0" prefHeight="34.0" prefWidth="325.0" text="Willkommen die Wörte" textFill="#fcfcfc">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Label>
+        <Label layoutX="588.0" layoutY="148.0" prefHeight="42.0" prefWidth="130.0" text="ANMELDEN" textFill="#e4c9c9">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="loginField" layoutX="505.0" layoutY="212.0" prefHeight="25.0" prefWidth="301.0" promptText="Benutzeridentifikation" />
+        <PasswordField fx:id="passwordField" layoutX="505.0" layoutY="263.0" prefHeight="25.0" prefWidth="301.0" promptText="Passwort" />
+        <Button fx:id="loginButton" layoutX="571.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="42.0" prefWidth="166.0" text="Anmeldung">
+
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant>
+                            <color>
+                                <Color red="1.0" green="0.6944444179534912" blue="0.8930555582046509" />
+                            </color>
+                        </Light.Distant>
+                    </light>
+                </Lighting>
+            </effect>
+            <font>
+                <Font name="Lucida Grande" size="13.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
