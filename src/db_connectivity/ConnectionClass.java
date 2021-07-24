@@ -18,7 +18,7 @@ public class ConnectionClass {
         JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
         DATABASE_URL = "jdbc:mysql://localhost:3306/wordApp";
         USERNAME = "root";
-        PASSWORD = "trade2245466";
+        PASSWORD = "";
     }
     public static boolean makeConnection(){
 
